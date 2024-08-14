@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="page1">
+    <div class="page1 ">
         <header>
             <div class="logo">
                 <img src="logo.png"alt="logo">
@@ -26,6 +26,7 @@
             <div class="login">
                 <a href="#">Sign Up</a>
                 <a href="#">Login</a>
+                <button class="theme-button"><i  class="ri-moon-fill dark-icon"></i><i  style="display:none" class="ri-sun-fill light-icon"></i> </button>
             </div>
         </header>
         <div class="search-section">
