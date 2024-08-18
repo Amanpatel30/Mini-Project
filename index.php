@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tasty Crunch</title>
+    <title>Yum Yum Rank</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
     <link href="https://fonts.cdnfonts.com/css/gilroy" rel="stylesheet">
     <link rel="shortcut icon" href="logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="page1 ">
+<body class="">
+    <div class="page1  ">
         <header>
             <div class="logo">
                 <img src="logo.png"alt="logo">
@@ -26,13 +26,17 @@
             <div class="login">
                 <a href="#">Sign Up</a>
                 <a href="#">Login</a>
-                <button class="theme-button"><i  class="ri-moon-fill dark-icon"></i><i  style="display:none" class="ri-sun-fill light-icon"></i> </button>
+                <button class="theme-button"><i   class="ri-moon-fill dark-icon"></i><i style="display:none"  class="ri-sun-fill light-icon"></i> </button>
             </div>
         </header>
         <div class="search-section">
             <div class="search">
-                <input type="text" placeholder="Search for any food...">
+                <input id="input-search-box" type="text" placeholder="Search for any food...">
                 <i class="ri-search-line"></i>
+                <div>
+                <ul class="search-result">
+                </ul>
+                </div>
             </div>
         </div>
     </div>

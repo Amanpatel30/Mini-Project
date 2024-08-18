@@ -17,6 +17,9 @@
     --footer-bg:#333;
     --footer-color:#ffffff;
     --theme-button-bg:#F5F5F5;
+    --search-result-color:#000;
+    --search-result-bg:#fff;
+    --search-result-inputHover:#d4d1d1;
 }
 .dark{
     --bg-color:#1A1A1A;
@@ -38,6 +41,9 @@
     --theme-button-bg:#333333;
     --dark-i-color:#333333;
     --light-i-color:#F5F5F5;
+    --search-result-color:#fff;
+    --search-result-bg:rgb(61, 61, 61);
+    --search-result-inputHover:#615f5f;
 }
 * {
     margin: 0;
@@ -122,31 +128,59 @@ nav a:hover{
     text-align: center;
     padding: 50px;
     background-color: var(--search-bg);
+    height: 200px;
 }
 .search {
-    position: relative;
     display: inline-block;
+    background-color: var(--search-result-bg);
+    border-radius: 20px;
+    border: 2px solid #000;
+    overflow: hidden;
 }
 .search input {
     width: 500px;
     padding: 10px 100px 10px 20px;
     font-size: 18px;
-    border: 2px solid var(--search-input-border);
-    border-radius: 5px;
-    box-sizing: border-box;
+    border: none;
+    /* border-radius: 0px; */
     background-color: var(--search-input-bg);
     color: var(--search-input-color);
 }
 .search input:focus{
-    border: 2px solid var(--search-input-border-focus);
+    outline: none;
 }
 .search i {
     position: absolute;
-    top: 25%;
-    right: 10px;
+    top: 20%;
+    right: 39%;
     color: var(--search-icon);
     font-size: 20px;
+    cursor:pointer;
 }   
+.search-result{
+    width: 500px;
+    font-size: 20px;
+    font-family: sans-serif;
+    display: contents;
+    background-color: var(--search-result-bg);
+    color: var(--search-result-color);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.search li{
+    padding: 5px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+   list-style: none;
+}
+/* .search li:nth-child(1){
+    border-top:1px solid #000;
+} */
+.search ul li:hover{
+    background-color: var(--search-result-inputHover);
+}
 .why-choose-us {
     background-color: var(--why-choose-us-bg);
     padding: 50px;
