@@ -1,12 +1,25 @@
+@font-face {
+    font-family: stm;
+    src: url(../fonts/steamed-regular_bc92c045-e889-47f1-9ade-15e9fc6e4c81.woff2);
+}
+@font-face {
+    font-family: neue;
+    src: url(../fonts/NeueMachina-Light.otf);
+}
+@font-face {
+    font-family: block;
+    src: url(../fonts/block-berthold-regular.woff2);
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
 }
 html, body {
     width:100%;
     height:100%;
+    font-family: stm;
+    background-color: rgb(91, 49, 94);
 }
 body::-webkit-scrollbar{
     display: none;
@@ -26,7 +39,7 @@ body::-webkit-scrollbar{
 .left{
     width: 30%;
     height: 80%;
-    background-color: rgb(247, 247, 247);
+    background-color: rgb(143, 199, 64);
 }
 .right{
     width: 70%;
@@ -41,19 +54,46 @@ body::-webkit-scrollbar{
     bottom: -35%;
     right: 15%;
 }
-
+.Product-info{
+    width: 100%;
+    height: 550px;
+    background-color: rgb(69, 39, 71);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.information{
+    line-height: 120px;
+    width: 50%;
+}
+.information h1{
+    font-size: 50px;
+    color: rgb(250, 188, 30);
+}
+.information p{
+    color: #fff;
+    line-height: normal;
+}
+.information button{
+    font-size: 25px;
+    background-color: rgb(250, 188, 30) ;
+    color: rgb(91, 49, 94);
+    padding: 9px 15px;
+    border-radius: 80px;
+    font-family: block;
+    border: none;
+}
 .main {
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
 }
-
 .left {
     width: 30%;
     height: 80%;
+    border-radius: 0px 30px 30px 0px;
 }
-
 .right {
     width: 70%;
     height: 80%;
@@ -63,7 +103,6 @@ body::-webkit-scrollbar{
     position: relative;
     overflow: hidden;
 }
-
 .right .img-container {
     min-width: 450px;
     height: 80%;
@@ -76,16 +115,14 @@ body::-webkit-scrollbar{
     /* justify-content: space-evenly; */
     flex-direction: column;
     transition: all .5s ease-in-out;
-
 }
 .img-container h2{
     margin-top: 10px;
-    font-family: sans-serif;
-    color: rgb(0, 77, 69);
+    color: rgb(250, 188, 30);
 }
 .img-container .line{
     width: 65%;
-    background-color: rgb(250, 161, 87);
+    background-color: #fff;
     height: 2px;
     margin-top: 10px;
 }
@@ -93,29 +130,25 @@ body::-webkit-scrollbar{
     width: 70%;
     margin-top: 20px;
     /* background-color: yellow; */
-    color: rgb(0, 77, 69);
-    font-family: sans-serif;
+    color: #fff;
     padding: 20px;
-    height: 2px;
-    
+    height: 2px;    
 }
-
 .img-container img {
-    height: 50%;
-    
+    height: 50%;  
 }
 .img-container button{
     position: absolute;
     bottom: 10%;
     left: 10%;
     font-size: 25px;
-    background-color: rgb(0, 77, 69);
-    color: #fff;
+    background-color: rgb(250, 188, 30) ;
+    color: rgb(91, 49, 94);
     padding: 9px 15px;
     border-radius: 80px;
+    font-family: block;
     border: none;
 }
-
 .pre {
     position: absolute;
     bottom: 0%;
@@ -123,20 +156,21 @@ body::-webkit-scrollbar{
     font-size: 30px;
     padding: 10px 20px;
     border-radius: 50px;
-    background-color: rgb(0, 77, 69);
-    color: #fff;
+    background-color: rgb(250, 188, 30);
+    color: rgb(91, 49, 94);
+    font-weight: 1000;
     border: none;
 
 }
-
 .next {
     position: absolute;
     bottom: 0%;
-    background-color: rgb(0, 77, 69);
+    background-color: rgb(250, 188, 30);
     left: 100px;
     font-size: 30px;
-    color: #fff;
+    color: rgb(91, 49, 94);
     padding: 10px 20px;
+    font-weight: 1000;
     border-radius: 50px;
     border: none;
 }

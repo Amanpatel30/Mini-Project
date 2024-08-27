@@ -1,7 +1,12 @@
 @font-face {
-    font-family: neue;
-    src: url(./NeueMachina-Light.otf);
+    font-family: stm;
+    src: url(./fonts/steamed-regular_bc92c045-e889-47f1-9ade-15e9fc6e4c81.woff2);
 }
+@font-face {
+    font-family: neue;
+    src: url(./fonts/NeueMachina-Light.otf);
+}
+
 
 :root {
     --bg-color: rgb(91, 49, 94);
@@ -12,9 +17,9 @@
     --search-bg: rgb(69, 38, 71);
     --search-input-border: #4A4A4A;
     --search-input-border-focus: #626262;
-    --why-choose-us-bg: #333;
+    --why-choose-us-bg: rgb(69, 38, 71);
     --why-choose-us-color: #fff;
-    --footer-bg: #333;
+    --footer-bg:  rgb(58, 32, 60);
     --footer-color: #ffffff;
     --theme-button-bg: #F5F5F5;
     --search-result-color: #000;
@@ -61,7 +66,7 @@ html,
 body {
     width: 100%;
     height: 100%;
-    font-family: gilroy;
+    font-family: stm;
 }
 
 body {
@@ -236,7 +241,7 @@ footer {
 
 
 
-#butterfly,#butterfly2,#butterfly3 {
+#butterfly,#butterfly2,#butterfly3,#butterfly4,#butterfly5{
    position:  absolute;
     width: 100px;
     height: 68px;
@@ -245,6 +250,9 @@ footer {
     background-size: cover;
     rotate: 20deg;
     transform: translateX(-100px);
+    
+}
+#butterfly{
     z-index: 2;
 }
 #cloud,#cloud2{
@@ -254,15 +262,28 @@ footer {
     background-image: url('./asset/cloud.png');
     background-size: cover;
     rotate: 1deg;
-    transform: translateY(-100px);
+    transform: translateY(-100px) translateX(-200px);
 }
 #butterfly2 {
-   transform: translateY(250px);
+   transform: translateY(250px) translateX(-200px);
    rotate: -20deg;
+   width: 75px;
+   height: 50px;
 }
 #butterfly3 {
-   transform: translateY(-386px) translateX(207px) rotate(310deg);
+   transform: translateY(-378px) translateX(204px) rotate(310deg);
 }
+#butterfly4 {
+   transform: translateY(-528px) translateX(1060px) rotate(314deg);
+   width: 80px;
+   height: 50px;
+}
+#butterfly5 {
+   transform: translateY(378px) translateX(956px) rotate(376deg);
+   width: 80px;
+   height: 50px;
+}
+
 #cloud2{
     background-image: url('./asset/cloud2.png');
     transform: translateX(-180px) translateY(400px);
