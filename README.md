@@ -1,7 +1,6 @@
 ﻿# Mini-Project
 # 💫 About Me:
-I am currently a web developer, and I want to become a professional web developer.
-
+I am a passionate web developer with a strong foundation in web technologies. Currently honing my skills, I aspire to become a professional web developer. I am committed to continuous learning and am eager to contribute to innovative projects that challenge me and help me grow in the field.
 ## 🌐 Socials:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aman-patel-44943024a/) 
 [![Medium](https://img.shields.io/badge/Medium-12100E?logo=medium&logoColor=white)](https://medium.com/@Amanpatel) 
